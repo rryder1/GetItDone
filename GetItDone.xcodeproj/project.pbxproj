@@ -13,6 +13,7 @@
 		7638A0461EECAF600040F4CA /* GetItDone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7638A0441EECAF600040F4CA /* GetItDone.xcdatamodeld */; };
 		7638A0481EECAF610040F4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7638A0471EECAF610040F4CA /* Assets.xcassets */; };
 		7638A04B1EECAF610040F4CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7638A0491EECAF610040F4CA /* LaunchScreen.storyboard */; };
+		7638A0531EECAFC80040F4CA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7638A0521EECAFC80040F4CA /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7638A0471EECAF610040F4CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7638A04A1EECAF610040F4CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7638A04C1EECAF610040F4CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7638A0521EECAFC80040F4CA /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				7638A0411EECAF600040F4CA /* Main.storyboard */,
 				7638A0471EECAF610040F4CA /* Assets.xcassets */,
 				7638A0491EECAF610040F4CA /* LaunchScreen.storyboard */,
+				7638A0521EECAFC80040F4CA /* Task.swift */,
 				7638A04C1EECAF610040F4CA /* Info.plist */,
 				7638A0441EECAF600040F4CA /* GetItDone.xcdatamodeld */,
 			);
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7638A0531EECAFC80040F4CA /* Task.swift in Sources */,
 				7638A0401EECAF600040F4CA /* ViewController.swift in Sources */,
 				7638A0461EECAF600040F4CA /* GetItDone.xcdatamodeld in Sources */,
 				7638A03E1EECAF600040F4CA /* AppDelegate.swift in Sources */,
