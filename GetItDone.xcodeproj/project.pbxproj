@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76367BD41EF338E1003F4EEF /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76367BD31EF338E1003F4EEF /* TaskViewController.swift */; };
 		7638A03E1EECAF600040F4CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7638A03D1EECAF600040F4CA /* AppDelegate.swift */; };
 		7638A0401EECAF600040F4CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7638A03F1EECAF600040F4CA /* ViewController.swift */; };
 		7638A0431EECAF600040F4CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7638A0411EECAF600040F4CA /* Main.storyboard */; };
 		7638A0461EECAF600040F4CA /* GetItDone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7638A0441EECAF600040F4CA /* GetItDone.xcdatamodeld */; };
 		7638A0481EECAF610040F4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7638A0471EECAF610040F4CA /* Assets.xcassets */; };
 		7638A04B1EECAF610040F4CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7638A0491EECAF610040F4CA /* LaunchScreen.storyboard */; };
-		7638A0531EECAFC80040F4CA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7638A0521EECAFC80040F4CA /* Task.swift */; };
+		7638A0571EECCF590040F4CA /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7638A0561EECCF590040F4CA /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76367BD31EF338E1003F4EEF /* TaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		7638A03A1EECAF600040F4CA /* GetItDone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetItDone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7638A03D1EECAF600040F4CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7638A03F1EECAF600040F4CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +27,7 @@
 		7638A0471EECAF610040F4CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7638A04A1EECAF610040F4CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7638A04C1EECAF610040F4CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7638A0521EECAFC80040F4CA /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		7638A0561EECCF590040F4CA /* AddView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddView.swift; path = ../AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +60,13 @@
 		7638A03C1EECAF600040F4CA /* GetItDone */ = {
 			isa = PBXGroup;
 			children = (
+				7638A0561EECCF590040F4CA /* AddView.swift */,
 				7638A03D1EECAF600040F4CA /* AppDelegate.swift */,
 				7638A03F1EECAF600040F4CA /* ViewController.swift */,
 				7638A0411EECAF600040F4CA /* Main.storyboard */,
+				76367BD31EF338E1003F4EEF /* TaskViewController.swift */,
 				7638A0471EECAF610040F4CA /* Assets.xcassets */,
 				7638A0491EECAF610040F4CA /* LaunchScreen.storyboard */,
-				7638A0521EECAFC80040F4CA /* Task.swift */,
 				7638A04C1EECAF610040F4CA /* Info.plist */,
 				7638A0441EECAF600040F4CA /* GetItDone.xcdatamodeld */,
 			);
@@ -142,8 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7638A0531EECAFC80040F4CA /* Task.swift in Sources */,
 				7638A0401EECAF600040F4CA /* ViewController.swift in Sources */,
+				7638A0571EECCF590040F4CA /* AddView.swift in Sources */,
+				76367BD41EF338E1003F4EEF /* TaskViewController.swift in Sources */,
 				7638A0461EECAF600040F4CA /* GetItDone.xcdatamodeld in Sources */,
 				7638A03E1EECAF600040F4CA /* AppDelegate.swift in Sources */,
 			);
@@ -307,6 +311,7 @@
 				7638A0511EECAF610040F4CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
