@@ -26,6 +26,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewWillAppear(_ animated: Bool) {
         getTasks()
+        
+        //Function to sort data by its rank and reorder the rank, Should probably be moved into a class
+        tasksArray.sort(by: {$0.rank < $1.rank})
+        for i in 0 ..< tasksArray.count{
+            tasksArray[i].rank = Int32(i)
+        }
+        
         tableView.reloadData()
     }
     

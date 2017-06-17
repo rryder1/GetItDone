@@ -78,6 +78,14 @@
                                     <action selector="doneButton:" destination="3eE-57-yYi" eventType="touchUpInside" id="xtB-Vb-HC8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZ5-b7-Y8b">
+                                <frame key="frameInset" minX="133" minY="413" width="121" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Move to Front"/>
+                                <connections>
+                                    <action selector="moveFrontButton:" destination="3eE-57-yYi" eventType="touchUpInside" id="Lu7-VI-IrF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -88,12 +96,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="moveFrontButton" destination="nZ5-b7-Y8b" id="wEs-Uk-p6Y"/>
                         <outlet property="taskName" destination="FJ9-yu-w3X" id="vcW-ny-4NZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ctv-SJ-bJG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1911" y="765"/>
+            <point key="canvasLocation" x="1909.5999999999999" y="764.16791604197908"/>
         </scene>
         <!--AddTask-->
         <scene sceneID="bIS-D1-z7U">

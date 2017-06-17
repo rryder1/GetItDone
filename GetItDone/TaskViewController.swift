@@ -31,6 +31,11 @@ class TaskViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func moveFrontButton(_ sender: AnyObject) {
+        
+        task?.rank = -1
+        
+    }
     @IBAction func doneButton(_ sender: AnyObject) {
         
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext

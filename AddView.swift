@@ -11,6 +11,8 @@ import UIKit
 class AddView: UIViewController {
     
     let newTask = Task(context: (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext)
+    
+    var tasksArray: [Task] = []
   
     @IBOutlet weak var taskText: UITextField!
 
@@ -18,8 +20,17 @@ class AddView: UIViewController {
     
     @IBAction func addButton(_ sender: AnyObject) {
         
+        getTasks()
+        
         newTask.taskString = taskText.text!
         newTask.isImportant = importantSwitch.isOn
+        
+        if importantSwitch.isOn {
+            newTask.rank = Int32(-2)
+        } else {
+        newTask.rank = Int32(tasksArray.count + 1)
+        }
+    
         
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
         
@@ -30,6 +41,17 @@ class AddView: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func getTasks() {
+        
+        let contextname = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        do{
+            tasksArray = try contextname.fetch(Task.fetchRequest()) as! [Task]
+        } catch {
+            print("ERROR")
+        }
     }
 
     override func didReceiveMemoryWarning() {
